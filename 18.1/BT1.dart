@@ -1,3 +1,5 @@
+import 'dart:io';
+
 List<dynamic> list_diem = [
   ['van', 6.5],
   ['toan', 6.5],
@@ -11,19 +13,17 @@ double tong_diem = 0;
 double diem_TB = 0;
 double diem = 0;
 
-// void nhap_diem() {
-//   for (int i = 0; i < quantity_diem; i++) {
-//     print('nhap diem mon' + list_diem[i]);
-//     String? input = stdin.readLineSync();
-//     if (input != null) {
-//       double diem = double.parse(input);
-//     }
-//     // double diem = double.parse(input);
-//     list_diem[i][1] = diem;
-//   }
-// }
+void nhap_diem() {
+  for (int i = 0; i < quantity_diem; i++) {
+    print('nhap diem mon ${list_diem[i][0]}');
+    String? input = stdin.readLineSync() ?? '';
+    double diem = double.tryParse(input ?? '') ?? 0;
+    list_diem[i][1] = diem;
+  }
+}
 
 void tinh_diem_TB() {
+  nhap_diem();
   for (int i = 0; i < quantity_diem; i++) {
     tong_diem += list_diem[i][1];
   }
