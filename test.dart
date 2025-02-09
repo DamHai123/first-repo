@@ -2,7 +2,7 @@ import 'dart:io';
 
 void BT1() {
   String name = 'Lee sang hook';
-  int age = 19;
+  int age = 19
   print('hello, toi la $name va toi $age tuoi');
 }
 
