@@ -1,13 +1,16 @@
+Map<dynamic, dynamic> phoneBook = {
+  'Quynh': '0987665554',
+  'Ngan': '0999777666',
+  'Nga': '0555774188',
+};
+
 void main() {
-  List<String> name = ['cham', 'trang', 'ngoc', 'khanh'];
-  name.insert(0, 'kien');
-  print(name);
-  name.removeWhere((i) {
-    print(i);
-    return i.length > 4;
+  phoneBook.addAll({'Chien': '0112223334', 'Si': '0456789113'});
+  print(phoneBook);
+  phoneBook['Nga'] = '0175123668';
+  phoneBook.remove('Chien');
+  print(phoneBook);
+  phoneBook.forEach((key, value) {
+    print('$key: $value');
   });
-  for (int i = 0; i < name.length; i++) {
-    name[i] = name[i].toUpperCase();
-  }
-  print(name);
 }

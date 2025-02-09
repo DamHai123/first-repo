@@ -1,9 +1,9 @@
 List<dynamic> list_diem = [
-  ['van', 6],
-  ['toan', 10],
-  ['sinh', 8],
-  ['anh', 8.7],
-  ['su', 7.6]
+  ['van', 6.5],
+  ['toan', 6.5],
+  ['sinh', 6.5],
+  ['anh', 6.5],
+  ['su', 6.5]
 ];
 int quantity_diem = list_diem.length;
 //double a = list_diem.reduce((a, b) => a + b);

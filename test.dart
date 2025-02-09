@@ -31,11 +31,14 @@ void BT3() {
 }
 
 void BT4() {
-  String? a = stdin.readLineSync() ?? '';
-  String? b = stdin.readLineSync() ?? '';
-  double new_a = double.parse(a) ?? 0;
-  double new_b = double.parse(b) ?? 0;
+  String? a = stdin.readLineSync();
+  String? b = stdin.readLineSync();
+
+  double new_a = double.tryParse(a ?? '') ?? 0;
+  double new_b = double.tryParse(b ?? '') ?? 0;
+
   dynamic c = (new_a * new_b) <= 0 ? 'loi' : (new_a * new_b);
+
   print(c);
 }
 
