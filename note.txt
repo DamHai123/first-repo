@@ -6,3 +6,9 @@ kiểu_dữ_liệu tên_hàm(ts1,ts2...){
     code...
     return ;
 }
+
+CÁCH COMMIT/UPDATE GITHUB:
+git status
+git add .
+git commit -m "Cập nhật tệp mới với các thay đổi"
+git push origin main

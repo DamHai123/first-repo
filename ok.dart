@@ -1,8 +1,13 @@
 void main() {
-  var hehe = [1, 2, 3, 4, 5];
-  List<String> hoho = ['1', '2', '3', '4', '5'];
-  print(hehe[2]);
-  hehe.addAll([2, 3, 4]);
-  print(hoho[2]);
-  print(hehe);
+  List<String> name = ['cham', 'trang', 'ngoc', 'khanh'];
+  name.insert(0, 'kien');
+  print(name);
+  name.removeWhere((i) {
+    print(i);
+    return i.length > 4;
+  });
+  for (int i = 0; i < name.length; i++) {
+    name[i] = name[i].toUpperCase();
+  }
+  print(name);
 }
