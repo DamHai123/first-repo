@@ -12,3 +12,8 @@ git status
 git add .
 git commit -m "Cập nhật tệp mới với các thay đổi"
 git push origin main
+
+
+a = value;
+var b = <định dạng>.from(a);
+// copy giá trị
